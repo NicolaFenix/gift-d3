@@ -1,0 +1,70 @@
+/* D3 js */
+
+@import "fx-mixins";
+
+.node {
+  cursor: pointer;
+}
+
+.node:hover {
+  stroke: #FFFFFF;
+  stroke-width: 1.5px;
+}
+
+.node--leaf {
+  fill: white;
+  opacity: 0.2;
+}
+
+.label {
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.quantity {
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.label,
+.node--root{
+  pointer-events: none;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+  font: 12px sans-serif;
+  background: white;
+  border: 0px;
+  pointer-events: none;
+  -webkit-box-shadow: 0px 4px 3px 0px rgba(50, 50, 50, 0.27);
+  -moz-box-shadow:    0px 4px 3px 0px rgba(50, 50, 50, 0.27);
+  box-shadow:         0px 4px 3px 0px rgba(50, 50, 50, 0.27);
+
+}
+
+
+
+
+
+// Bar 1
+
+#bar1 {
+  height:150px;
+  width: 300px;
+  display: block;
+
+}
+
+#mask1{
+  position: absolute;
+}
+
+
+#bar1 .bar {
+  fill: red;
+}
